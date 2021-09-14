@@ -4,6 +4,14 @@ public class Greeting {
     private final long id;
     private String message;
 
+    public String getMessage() {
+        return message;
+    }
+
+    public long getId() {
+        return id;
+    }
+
     public Greeting(){
         id = 0;
         message = "";
