@@ -4,8 +4,8 @@ import org.springframework.web.bind.annotation.*;
 
 
 
-@RestController
-@RequestMapping("/hello")
+//@RestController
+//@RequestMapping("/hello")
 public class HelloGreeting {
 
 //    private static final String template = "Hello, %s!";
