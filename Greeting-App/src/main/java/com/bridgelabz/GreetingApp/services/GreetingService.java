@@ -33,8 +33,8 @@ public class GreetingService  implements  IGreetingService{
     public Greeting getGreetingById(Long id) {
         return null;
     }
-}
-    @Override
+
+
     public Greeting updateGreeting(long id,User user) {
         String message = String.format(template,user.toString());
         return greetingRepository.findById(id).
@@ -44,7 +44,6 @@ public class GreetingService  implements  IGreetingService{
                 }).get();
     }
 
-    @Override
     public Greeting deleteGreeting(Long id) {
         return greetingRepository.findById(id).map(greeting -> {
             this.greetingRepository.deleteById(id);
